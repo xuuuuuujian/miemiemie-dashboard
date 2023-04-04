@@ -21,6 +21,15 @@ const routes = [
                 },
                 component: () => import(/* webpackChunkName: "dashboard" */ '../views/dashboard.vue'),
             },
+            {
+                path: '/tabs',
+                name: 'tabs',
+                meta: {
+                    title: 'tab标签',
+                    permiss: '3',
+                },
+                component: () => import(/* webpackChunkName: "tabs" */ '../views/tabs.vue'),
+            },
         ],
     },
     {
